@@ -14,7 +14,7 @@ This example demonstrates how to integrate the Model Context Protocol (MCP) into
 
 **Install the dependencies(local):**
 
-- Method 1: Install directly from the project directory
+- Install directly from the project directory
 
 ```bash
 git clone [project repository URL]
