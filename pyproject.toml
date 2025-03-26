@@ -1,0 +1,26 @@
+[project]
+name = "pubchem_mcp_server"
+version = "0.1.5"
+description = ""
+authors = [
+    {name = "zelin",email = "zelinjiang@cuhk.edu.hk"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+"python-dotenv>=1.0.0",
+"requests>=2.31.0",
+"mcp>=1.0.0",
+"uvicorn>=0.32.1"
+]
+
+
+[tool.poetry]
+packages = [{include = "pubchem_mcp_server", from = "src"}]
+[tool.poetry.scripts]
+pubchem_mcp_server = "pubchem_mcp_server.main:main"
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
