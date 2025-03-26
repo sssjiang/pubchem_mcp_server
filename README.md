@@ -1,6 +1,6 @@
-# MCP Simple Chatbot
+# pubchem mcp server
 
-This example demonstrates how to integrate the Model Context Protocol (MCP) into a simple CLI chatbot. The implementation showcases MCP's flexibility by supporting multiple tools through MCP servers and is compatible with any LLM provider that follows OpenAI API standards.
+the mcp is used to extract the drug basic chemical infomation from pubchem API.
 
 ## Requirements
 
