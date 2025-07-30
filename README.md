@@ -2,6 +2,8 @@
 
 the mcp is used to extract the drug basic chemical infomation from pubchem API.
 
+[![MCPHub.com Badge](https://mcphub.com/api/mcp-servers/sssjiang/pubchem_mcp_server/badge)](https://mcphub.com/mcp-servers/sssjiang/pubchem_mcp_server)
+
 ## Requirements
 
 - Python 3.10
