@@ -310,7 +310,7 @@ async def get_cid_by_name(name: str) -> str:
     """
     cids = await get_cid_by_keyword(name)
     if cids:
-        return cids[0]
+        return str(cids[0])
     else: 
         return "No CID found in PubChem"
 def main():
