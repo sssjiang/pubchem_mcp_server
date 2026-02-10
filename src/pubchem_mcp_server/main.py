@@ -299,7 +299,20 @@ async def search_chemical_by_cas(cas_number: str) -> str:
     """
     # 使用CAS号作为关键词搜索
     return await get_chemical_info(cas_number)
-
+# 根据化学物质名获得CID
+@mcp.tool()
+async def get_cid_by_name(name: str) -> str:
+    """
+    根据化学物质名获得CID
+    
+    Args:
+        name: 化学物质名称
+    """
+    cids = await get_cid_by_keyword(name)
+    if cids:
+        return cids[0]
+    else: 
+        return "No CID found in PubChem"
 def main():
     """命令行入口点"""
     mcp.run(transport='stdio')
